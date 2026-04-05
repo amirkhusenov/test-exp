@@ -103,6 +103,22 @@ body {
   align-items: start;
 }
 
+@media (min-width: 1025px) {
+  .services-layout {
+    min-height: 100vh;
+  }
+
+  .services-layout.is-scroll-mode .service-item {
+    cursor: default;
+  }
+
+  .services-layout.is-scroll-mode .service-photo {
+    transition: none;
+    clip-path: inset(0 0 0 0);
+    filter: none;
+  }
+}
+
 .services-slider {
   display: none;
 }
